@@ -2,8 +2,8 @@
 Welcome to MDMCP - Markdown MCP documentation.
 
 ## Available routes:
-- [Quick Start](quick-start) - Get up and running
-- [Project Structure](project-structure) - Directory layout
+- [Quick Start](quick_start) - Get up and running
+- [Project Structure](project_structure) - Directory layout
 - [Development Guide](development) - Development workflows
-- [Markdown Support](markdown-support) - Formatting features
-- [Technology Stack](technology-stack) - Technologies used
+- [Markdown Support](markdown_support) - Formatting features
+- [Technology Stack](technology_stack) - Technologies used

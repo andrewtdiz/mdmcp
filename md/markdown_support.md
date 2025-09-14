@@ -24,7 +24,7 @@ Rich markdown formatting with advanced features.
 
 **Template Variables:**
 ```markdown
-Hello {{name}}, welcome to {{project}}!
+Hello `\{\{name\}\}`, welcome to `\{\{project\}\}`!
 ```
 
 ## Conversion System
