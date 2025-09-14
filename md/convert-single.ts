@@ -16,7 +16,7 @@ if (!filePath.endsWith('.md')) {
 
 console.log(`🔄 Converting ${filePath}...`);
 
-const generatedDir = './_generated';
+const generatedDir = './md/_generated';
 const result = convertMdToTs(filePath, generatedDir);
 
 if (result.success) {
