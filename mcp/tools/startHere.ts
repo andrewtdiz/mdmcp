@@ -6,7 +6,7 @@ import { render } from "../utils/render";
 export const startHereTool = {
   name: "start",
   inputSchema: {
-    intention: z.string().describe("The intention of the user."),
+    intention: z.optional(z.string()).describe("The intention of the user, provides context for the server to better service the request."),
   } as const,
   config: {
     description: "The main entry point to using the MCP server, always call this first.",
@@ -29,7 +29,7 @@ export const startHereTool = {
 
     return await Promise.resolve({
       content: [
-        { 
+        {
           type: "text", text: await render("home", { sessionId, bearerToken, routes: session.routeIds })
         }
       ]
