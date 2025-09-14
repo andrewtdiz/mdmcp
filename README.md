@@ -18,14 +18,14 @@ A unified monorepo containing both a Next.js frontend application and an MCP (Mo
    cd modelmarkdownprotocol
    ```
 
-2. **Install dependencies:**
+2. **Install frontend dependencies:**
    ```bash
-   npm install
+   cd frontend && npm install
    ```
 
-3. **Install all package dependencies:**
+3. **Install MCP server dependencies:**
    ```bash
-   npm run install:all
+   cd mcp && npm install
    ```
 
 4. **Start development servers:**
