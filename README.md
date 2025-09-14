@@ -28,9 +28,9 @@ A unified monorepo containing both a Next.js frontend application and an MCP (Mo
    cd mcp && npm install
    ```
 
-4. **Start development servers:**
+4. **Install at the project root and start development servers:**
    ```bash
-   npm run dev
+   npm install && npm run dev
    ```
 
 This will start both the frontend (Next.js) and MCP server concurrently. The frontend will be available at `http://localhost:3000` and the MCP server will run on its configured port.
