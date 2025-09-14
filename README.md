@@ -1,5 +1,7 @@
 # MDMCP - Markdown MCP
 
+![Project Screenshot](./Screenshot.png)
+
 A unified monorepo containing both a Next.js frontend application and an MCP (Model Context Protocol) server for serving markdown text. This project provides a complete solution for rendering and serving markdown content with dynamic template support and a modern web interface.
 
 ## 🚀 Quick Start
