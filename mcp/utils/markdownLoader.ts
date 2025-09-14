@@ -13,7 +13,7 @@ import { custom_metadata } from '../../md/_generated/custom_metadata'
 import { convex } from '../../md/_generated/convex'
 import { invalid_route } from '../../md/_generated/invalid_route'
 
-const markdownContent: Record<string, string> = {
+const markdownContent: Record<string, string | ((variables: any) => string)> = {
   home,
   quick_start,
   my_account,
@@ -30,6 +30,10 @@ const markdownContent: Record<string, string> = {
   invalid_route
 }
 
-export function loadMarkdown(route: string): string {
-  return markdownContent[route] || invalid_route
+export function loadMarkdown(route: string, variables: Record<string, string> = {}): string {
+  const content = markdownContent[route] || invalid_route;
+  if (typeof content === 'function') {
+    return content(variables);
+  }
+  return content;
 }

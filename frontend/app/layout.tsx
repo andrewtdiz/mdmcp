@@ -6,6 +6,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'MDMCP - Markdown MCP Frontend',
   description: 'A unified frontend for serving markdown text via MCP',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({

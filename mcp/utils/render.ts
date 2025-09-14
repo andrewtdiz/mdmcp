@@ -1,6 +1,6 @@
 
 import { loadMarkdown } from './markdownLoader'
 
-export async function render(route: string, context: { sessionId: string, bearerToken?: string, routes: string[] }) {
-    return loadMarkdown(route)
+export async function render(route: string, context: { sessionId: string, bearerToken?: string, routes: string[], name?: string }) {
+    return loadMarkdown(route, { name: context.name || 'User' })
 }
