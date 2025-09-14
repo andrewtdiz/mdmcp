@@ -26,7 +26,10 @@
     "start:frontend": "cd frontend && npm start",
     "test": "npm test",
     "clean": "rm -rf dist node_modules frontend/node_modules mcp/node_modules frontend/.next",
-    "install:all": "cd frontend && npm install && cd ../mcp && npm install"
+    "install:all": "cd frontend && npm install && cd ../mcp && npm install",
+    "generate": "tsx md/convert-all.ts",
+    "generate:single": "tsx md/convert-single.ts",
+    "watch:md": "chokidar \"md/*.md\" -c \"tsx md/convert-single.ts {path}\""
   },
   "keywords": [
     "markdown",
@@ -82,7 +85,10 @@
     "autoprefixer": "^10.4.0",
     "eslint": "^8.0.0",
     "eslint-config-next": "^15.1.6",
+    "chokidar-cli": "^3.0.0",
+    "nodemon": "^3.1.0",
     "postcss": "^8.4.0",
+    "tsx": "^4.7.0",
     "typescript": "^5.0.0"
   },
   "peerDependencies": {
