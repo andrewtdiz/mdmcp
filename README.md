@@ -157,7 +157,7 @@ MDMCP supports rich markdown formatting with advanced features:
 - **Headers:** `# H1`, `## H2`, `### H3`, etc.
 - **Emphasis:** `*italic*`, `**bold**`, `***bold italic***`
 - **Lists:** Ordered (`1.`) and unordered (`-`, `*`)
-- **Links:** `[text](url)` and `[text][reference]`
+- **Links:** `[text](route_id)`
 - **Images:** `![alt](src)`
 - **Code:** `` `inline` `` and ``` code blocks ```
 - **Blockquotes:** `> quote`
@@ -170,7 +170,7 @@ MDMCP supports rich markdown formatting with advanced features:
 - **Strikethrough:** `~~deleted text~~`
 - **Task Lists:** `- [x] completed` / `- [ ] todo`
 - **Tables with alignment**
-- **Automatic URL linking**
+- **Automatic route_id linking**
 - **Line breaks:** Respected without requiring double spaces
 
 #### MDX Support

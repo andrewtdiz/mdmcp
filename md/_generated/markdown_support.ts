@@ -6,7 +6,7 @@ Rich markdown formatting with advanced features.
 - Headers (\`# ## ###\`)
 - Emphasis (\`*italic*\`, \`**bold**\`)
 - Lists (ordered/unordered)
-- Links (\`[text](url)\`)
+- Links (\`[text](route_id)\`)
 - Code blocks & inline code
 - Tables & blockquotes
 
@@ -15,7 +15,7 @@ Rich markdown formatting with advanced features.
 **GitHub Flavored Markdown:**
 - Strikethrough (\`~~text~~\`)
 - Task lists (\`- [x] done\`)
-- Auto-linking URLs
+- Auto-linking Route IDs
 
 **MDX Support:**
 - React components in markdown
