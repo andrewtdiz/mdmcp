@@ -15,7 +15,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:mcp\"",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:mcp\" \"npm run watch:md\"",
     "dev:frontend": "cd frontend && npm run dev",
     "dev:mcp": "cd mcp && npm run dev",
     "build": "npm run build:frontend && npm run build:mcp",
