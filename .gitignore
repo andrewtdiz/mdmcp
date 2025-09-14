@@ -1,0 +1,24 @@
+node_modules/
+dist/
+*.log
+.env
+.env.local
+.env.production
+.env.development
+.DS_Store
+*.tsbuildinfo
+
+# Frontend specific
+frontend/node_modules/
+frontend/dist/
+frontend/tmp/
+frontend/.next/
+
+# MCP specific
+mcp/node_modules/
+mcp/dist/
+
+*/node_modules/
+
+# Keep markdown content
+!md/

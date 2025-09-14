@@ -1,0 +1,91 @@
+{
+  "name": "mdmcp",
+  "version": "1.0.0",
+  "description": "A unified Next.js frontend and MCP server for serving markdown text",
+  "main": "dist/mcp/index.js",
+  "type": "module",
+  "bin": {
+    "mdmcp-server": "./dist/mcp/index.js",
+    "mdmcp-frontend": "./dist/frontend/server.js"
+  },
+  "files": [
+    "dist/",
+    "md/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:mcp\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:mcp": "cd mcp && npm run dev",
+    "build": "npm run build:frontend && npm run build:mcp",
+    "build:frontend": "cd frontend && npm run build",
+    "build:mcp": "cd mcp && npm run build",
+    "start": "npm run start:frontend",
+    "start:mcp": "cd mcp && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "test": "npm test",
+    "clean": "rm -rf dist node_modules frontend/node_modules mcp/node_modules frontend/.next",
+    "install:all": "cd frontend && npm install && cd ../mcp && npm install"
+  },
+  "keywords": [
+    "markdown",
+    "mcp",
+    "server",
+    "frontend",
+    "react",
+    "nextjs",
+    "modelcontextprotocol"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@modelcontextprotocol/sdk": "^1.18.0",
+    "@next/mdx": "^15.1.6",
+    "@radix-ui/react-checkbox": "^1.3.3",
+    "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-select": "^2.2.5",
+    "@radix-ui/react-separator": "^1.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-tooltip": "^1.2.8",
+    "@workos-inc/authkit-nextjs": "^2.7.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "concurrently": "^9.1.0",
+    "express": "^5.1.0",
+    "jose": "^6.1.0",
+    "lucide-react": "^0.525.0",
+    "next": "^15.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^10.1.0",
+    "remark-breaks": "^4.0.0",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^3.4.1",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "3.23"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^15.1.6",
+    "postcss": "^8.4.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
