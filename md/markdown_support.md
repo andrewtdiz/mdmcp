@@ -10,7 +10,7 @@ Rich markdown formatting with advanced features.
 
 ## Navigation Features
 - Links ([text](url)) to other routes
-- Buttons (\`<button id="button-id">text</button>\`) to execute commands
+- Buttons (\`<button id="some-action-id">Click me</button>\`) to run commands
 
 ## Commands
 - Code blocks & inline code for sending commands
